@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `bags`
 --
 
-CREATE TABLE `bags` (
+CREATE TABLE bags (
   `id` int(10) NOT NULL,
   `bags_category_name` varchar(50) NOT NULL,
   `bags_category_quantity` int(10) DEFAULT 0,
