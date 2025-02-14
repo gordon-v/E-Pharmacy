@@ -1,5 +1,5 @@
 <?php  session_start();
- include_once 'includes/config.php';
+include_once 'includes/config.php';
 //  all functions
 require_once 'functions/functions.php';
 

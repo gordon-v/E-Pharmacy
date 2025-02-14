@@ -11,7 +11,7 @@ $perfumes = get_perfume_category();
 $cosmetics = get_cosmetics_category();
 $glasses = get_glasses_category();
 $bags = get_bags_category();
-
+$digestiven_trakt = get_digestiven_trakt_category()
 ?>
 
 
@@ -53,7 +53,7 @@ $bags = get_bags_category();
             <!-- get category data from table -->
             <!-- clothes category -->
             <?php
-            if ($row['name'] == "Clothes" || $row['name'] == "clothes") {
+            if ($row['name'] == "Витамини и минерали" || $row['name'] == "витамини и минерали") {
               while ($clothrow = mysqli_fetch_assoc($clothes)) {
 
             ?>
@@ -83,7 +83,7 @@ $bags = get_bags_category();
             ?>
             <!-- Foot wear  category --> 
             <?php
-            if ($row['name'] == "Footwear" || $row['name'] == "footwear") {
+            if ($row['name'] == "Козметика и убавина" || $row['name'] == "козметика и убавина") {
               while ($footwearrow = mysqli_fetch_assoc($footwears)) {
 
 
@@ -110,7 +110,7 @@ $bags = get_bags_category();
             <!--  -->
             <!-- jewelry  category -->
             <?php
-            if ($row['name'] == "Jewelry" || $row['name'] == "jewelry") {
+            if ($row['name'] == "Општа благосостојба" || $row['name'] == "општа благосостојба") {
               while ($jewelryrow = mysqli_fetch_assoc($jewelries)) {
 
 
@@ -137,7 +137,7 @@ $bags = get_bags_category();
             <!--  -->
             <!-- perfume  category -->
             <?php
-            if ($row['name'] == "Perfume" || $row['name'] == "perfume") {
+            if ($row['name'] == "Тегоби" || $row['name'] == "тегоби") {
               while ($perfumesrow = mysqli_fetch_assoc($perfumes)) {
 
 
@@ -165,7 +165,7 @@ $bags = get_bags_category();
             <!--  -->
             <!-- cosmetics  category -->
             <?php
-            if ($row['name'] == "Cosmetics" || $row['name'] == "cosmetics") {
+            if ($row['name'] == "Уво, нос и грло" || $row['name'] == "уво, нос и грло") {
               while ($cosmeticsrow = mysqli_fetch_assoc($cosmetics)) {
 
 
@@ -193,7 +193,7 @@ $bags = get_bags_category();
             <!--  -->
             <!-- cosmetics  category -->
             <?php
-            if ($row['name'] == "Glasses" || $row['name'] == "glasses") {
+            if ($row['name'] == "Очи, уста и заби" || $row['name'] == "очи, уста и заби") {
               while ($glassesrow = mysqli_fetch_assoc($glasses)) {
 
 
@@ -221,7 +221,7 @@ $bags = get_bags_category();
             <!--  -->
             <!-- cosmetics  category -->
             <?php
-            if ($row['name'] == "Bags" || $row['name'] == "bags") {
+            if ($row['name'] == "Коса, кожа и нокти" || $row['name'] == "коса, кожа и нокти") {
               while ($bagsrow = mysqli_fetch_assoc($bags)) {
 
 
@@ -246,7 +246,27 @@ $bags = get_bags_category();
               }
             }
             ?>
-            <!--  -->
+
+            <?php
+              if ($row['name'] == "Дигестивен тракт" || $row['name'] == "дигестивен тракт") {
+                  while ($digestiven_trakt_row = mysqli_fetch_assoc($digestiven_trakt)) {
+                      ?>
+                      <li class="sidebar-submenu-category">
+                          <form class="search-form" method="post" action="./search.php">
+                              <input type="hidden" name="search" value="<?php echo $digestiven_trakt_row['sub_category_name'] ?>" />
+                              <button type="submit" name="submit" class="sidebar-submenu-title">
+                                  <p class="product-name">
+                                      <?php echo $digestiven_trakt_row['sub_category_name'] ?>
+                                  </p>
+                              </button>
+                          </form>
+                      </li>
+                      <?php
+                  }
+              }
+              ?>
+
+              <!--  -->
 
 
           </ul>

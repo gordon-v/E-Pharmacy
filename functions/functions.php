@@ -31,52 +31,58 @@
     // get clothes category
     function get_clothes_category(){
         global $conn;
-        $query = "SELECT * FROM clothes WHERE clothes.coloth_category_status = 1";
+        $query = "SELECT * FROM `Витамини и минерали` WHERE `Витамини и минерали`.coloth_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
-    // get footwear category
+    // get Козметика и убавина category
     function get_footwear_category(){
         global $conn;
-        $query = "SELECT * FROM footwear WHERE footwear.footwear_category_status = 1";
+        $query = "SELECT * FROM `Козметика и убавина` WHERE `Козметика и убавина`.footwear_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
     // get jewelry category
     function get_jewelry_category(){
         global $conn;
-        $query = "SELECT * FROM jewelry WHERE jewelry.jewelry_category_status = 1";
+        $query = "SELECT * FROM `Општа благосостојба` WHERE `Општа благосостојба`.jewelry_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
     // get perfume category
     function get_perfume_category(){
         global $conn;
-        $query = "SELECT * FROM perfume WHERE perfume.perfume_category_status = 1";
+        $query = "SELECT * FROM Тегоби WHERE Тегоби.perfume_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
     // get cosmetics category
     function get_cosmetics_category(){
         global $conn;
-        $query = "SELECT * FROM cosmetics WHERE cosmetics.cosmetics_category_status = 1";
+        $query = "SELECT * FROM `Уво, нос и грло` WHERE `Уво, нос и грло`.cosmetics_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
     // get glasses category
     function get_glasses_category(){
         global $conn;
-        $query = "SELECT * FROM glasses WHERE glasses.glasses_category_status = 1";
+        $query = "SELECT * FROM `Очи, уста и заби` WHERE `Очи, уста и заби`.glasses_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
     // get bags category
     function get_bags_category(){
         global $conn;
-        $query = "SELECT * FROM bags WHERE bags.bags_category_status = 1";
+        $query = "SELECT * FROM `Коса, кожа и нокти` WHERE `Коса, кожа и нокти`.bags_category_status = 1";
 
         return $result = mysqli_query($conn, $query);
     }
+function get_digestiven_trakt_category(){
+    global $conn;
+    $query = "SELECT * FROM `Дигестивен тракт` WHERE `Дигестивен тракт`.sub_category_status = 1";
+
+    return $result = mysqli_query($conn, $query);
+}
 
 
     // get best sellers form product table
@@ -146,7 +152,7 @@
 
     function display_electronic_category(){
         global $connect;
-        $query = "SELECT * FROM category_electronics WHERE category_electronics.status = 1";
+        $query = "SELECT * FROM `Срце и крвни садови` WHERE `Срце и крвни садови`.status = 1";
 
         
         return $result = mysqli_query($connect, $query);

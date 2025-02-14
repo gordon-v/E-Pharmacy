@@ -6,7 +6,6 @@ $serverName = "localhost";
 $dBUsername = "provitalisdev";
 $dBPassword = "provitalisdev";
 $dBName = "provitalisdev";
-
 //Before we can access data in the MySQL database, we need to be able to connect to the server i.e php
 $conn = new mysqli($serverName,$dBUsername,$dBPassword,$dBName );
 

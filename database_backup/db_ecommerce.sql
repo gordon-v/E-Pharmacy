@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bags`
+-- Table structure for table `Коса, кожа и нокти`
 --
 
-CREATE TABLE bags (
+CREATE TABLE `Коса, кожа и нокти` (
   `id` int(10) NOT NULL,
   `bags_category_name` varchar(50) NOT NULL,
   `bags_category_quantity` int(10) DEFAULT 0,
@@ -35,13 +35,37 @@ CREATE TABLE bags (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `bags`
+-- Dumping data for table `Коса, кожа и нокти`
 --
 
-INSERT INTO `bags` (`id`, `bags_category_name`, `bags_category_quantity`, `bags_category_status`) VALUES
+INSERT INTO `Коса, кожа и нокти` (`id`, `bags_category_name`, `bags_category_quantity`, `bags_category_status`) VALUES
 (1, 'Shopping Bag', 62, 0x31),
 (2, 'Purse', 35, 0x31),
 (3, 'Wallet', 75, 0x31);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Дигестивен тракт`
+--
+
+CREATE TABLE `Дигестивен тракт` (
+    `id` int(10) NOT NULL,
+    `sub_category_name` varchar(50) NOT NULL,
+    `sub_category_quantity` int(10) DEFAULT 0,
+    `sub_category_status` binary(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `Дигестивен тракт`
+--
+
+INSERT INTO `Дигестивен тракт` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`) VALUES
+    (1, 'Желудник', 62, 0x31),
+    (2, 'Опстипација', 35, 0x31),
+    (3, 'Дијареја', 75, 0x31),
+    (4, 'Надуеност', 75, 0x31),
+    (5, 'Пробиотици', 75, 0x31);
 
 -- --------------------------------------------------------
 
@@ -87,14 +111,15 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `img`, `created_at`, `updated_at`, `status`) VALUES
-(1, 'Clothes', 'dress.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(2, 'Footwear', 'shoes.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(3, 'Jewelry', 'jewelry.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(4, 'Perfume', 'perfume.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(5, 'Cosmetics', 'cosmetics.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(6, 'Glasses', 'glasses.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(7, 'Bags', 'bag.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
-(8, 'Electronics', 'watch.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31);
+(1, 'Витамини и минерали', 'dress.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(2, 'Козметика и убавина', 'shoes.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(3, 'Општа благосостојба', 'jewelry.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(4, 'Тегоби', 'perfume.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(5, 'Уво, нос и грло', 'cosmetics.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(6, 'Очи, уста и заби', 'glasses.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(7, 'Коса, кожа и нокти', 'bag.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(8, 'Дигестивен тракт', 'bag.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31),
+(9, 'Срце и крвни садови', 'watch.svg', '2022-11-08 17:05:38', '2022-11-08 22:05:38', 0x31);
 
 -- --------------------------------------------------------
 
@@ -126,20 +151,20 @@ INSERT INTO `category_bar` (`id`, `category_title`, `category_quantity`, `catego
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category_electronics`
+-- Table structure for table `Срце и крвни садови`
 --
 
-CREATE TABLE `category_electronics` (
+CREATE TABLE `Срце и крвни садови` (
   `id` int(10) NOT NULL,
   `category_name` varchar(30) NOT NULL,
   `status` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `category_electronics`
+-- Dumping data for table `Срце и крвни садови`
 --
 
-INSERT INTO `category_electronics` (`id`, `category_name`, `status`) VALUES
+INSERT INTO `Срце и крвни садови` (`id`, `category_name`, `status`) VALUES
 (1, 'Desktop', 1),
 (2, 'Laptop', 1),
 (3, 'Camera', 1),
@@ -149,10 +174,10 @@ INSERT INTO `category_electronics` (`id`, `category_name`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `clothes`
+-- Table structure for table `VitaminiMinerali`
 --
 
-CREATE TABLE `clothes` (
+CREATE TABLE `Витамини и минерали` (
   `id` int(10) NOT NULL,
   `cloth_category_name` varchar(50) NOT NULL,
   `cloth_category_quantity` int(10) DEFAULT 0,
@@ -160,10 +185,10 @@ CREATE TABLE `clothes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `clothes`
+-- Dumping data for table `VitaminiMinerali`
 --
 
-INSERT INTO `clothes` (`id`, `cloth_category_name`, `cloth_category_quantity`, `coloth_category_status`) VALUES
+INSERT INTO `Витамини и минерали` (`id`, `cloth_category_name`, `cloth_category_quantity`, `coloth_category_status`) VALUES
 (1, 'Shirt', 300, 0x31),
 (2, 'shorts & jeans', 60, 0x31),
 (4, 'jacket', 50, 0x31),
@@ -172,10 +197,10 @@ INSERT INTO `clothes` (`id`, `cloth_category_name`, `cloth_category_quantity`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cosmetics`
+-- Table structure for table `Уво, нос и грло`
 --
 
-CREATE TABLE `cosmetics` (
+CREATE TABLE `Уво, нос и грло` (
   `id` int(10) NOT NULL,
   `cosmetics_category_name` varchar(50) NOT NULL,
   `cosmetics_category_quantity` int(10) DEFAULT 0,
@@ -186,7 +211,7 @@ CREATE TABLE `cosmetics` (
 -- Dumping data for table `cosmetics`
 --
 
-INSERT INTO `cosmetics` (`id`, `cosmetics_category_name`, `cosmetics_category_quantity`, `cosmetics_category_status`) VALUES
+INSERT INTO `Уво, нос и грло` (`id`, `cosmetics_category_name`, `cosmetics_category_quantity`, `cosmetics_category_status`) VALUES
 (1, 'Shampoo', 68, 0x31),
 (2, 'Sunscreen', 46, 0x31),
 (3, 'Body Wash', 79, 0x31),
@@ -213,7 +238,8 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`customer_id`, `customer_fname`, `customer_email`, `customer_pwd`, `customer_phone`, `customer_address`, `customer_role`) VALUES
-(9, 'FahadAdmin', 'dev.shahfahad@gmail.com', 'adminfahad', '03469589557', 'Peshawar, Pakistan', 'admin');
+(9, 'FahadAdmin', 'dev.shahfahad@gmail.com', 'adminfahad', '03469589557', 'Peshawar, Pakistan', 'admin'),
+(10, 'GordonAdmin', 'gordon.velichkovski@proton.me', 'admin', '03469589557', 'Peshawar, Pakistan', 'admin');
 
 -- --------------------------------------------------------
 
@@ -244,10 +270,10 @@ INSERT INTO `deal_of_the_day` (`deal_id`, `deal_title`, `deal_description`, `dea
 -- --------------------------------------------------------
 
 --
--- Table structure for table `footwear`
+-- Table structure for table `Козметика и убавина`
 --
 
-CREATE TABLE `footwear` (
+CREATE TABLE `Козметика и убавина` (
   `id` int(10) NOT NULL,
   `footwear_category_name` varchar(50) NOT NULL,
   `footwear_category_quantity` int(10) DEFAULT 0,
@@ -255,10 +281,10 @@ CREATE TABLE `footwear` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `footwear`
+-- Dumping data for table `Козметика и убавина`
 --
 
-INSERT INTO `footwear` (`id`, `footwear_category_name`, `footwear_category_quantity`, `footwear_category_status`) VALUES
+INSERT INTO `Козметика и убавина` (`id`, `footwear_category_name`, `footwear_category_quantity`, `footwear_category_status`) VALUES
 (1, 'Sports', 45, 0x31),
 (2, 'Formal', 75, 0x31),
 (3, 'Casual', 35, 0x31),
@@ -268,10 +294,10 @@ INSERT INTO `footwear` (`id`, `footwear_category_name`, `footwear_category_quant
 -- --------------------------------------------------------
 
 --
--- Table structure for table `glasses`
+-- Table structure for table `Очи, уста и заби`
 --
 
-CREATE TABLE `glasses` (
+CREATE TABLE `Очи, уста и заби` (
   `id` int(10) NOT NULL,
   `glasses_category_name` varchar(50) NOT NULL,
   `glasses_category_quantity` int(10) DEFAULT 0,
@@ -279,10 +305,10 @@ CREATE TABLE `glasses` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `glasses`
+-- Dumping data for table `Очи, уста и заби`
 --
 
-INSERT INTO `glasses` (`id`, `glasses_category_name`, `glasses_category_quantity`, `glasses_category_status`) VALUES
+INSERT INTO `Очи, уста и заби` (`id`, `glasses_category_name`, `glasses_category_quantity`, `glasses_category_status`) VALUES
 (1, 'Sunglasses', 50, 0x31),
 (2, 'Lenses', 48, 0x31),
 (3, 'Lenses', 48, 0x31);
@@ -290,10 +316,10 @@ INSERT INTO `glasses` (`id`, `glasses_category_name`, `glasses_category_quantity
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jewelry`
+-- Table structure for table `Општа благосостојба`
 --
 
-CREATE TABLE `jewelry` (
+CREATE TABLE `Општа благосостојба` (
   `id` int(10) NOT NULL,
   `Jewelry_category_name` varchar(50) NOT NULL,
   `Jewelry_category_quantity` int(10) DEFAULT 0,
@@ -301,10 +327,10 @@ CREATE TABLE `jewelry` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `jewelry`
+-- Dumping data for table `Општа благосостојба`
 --
 
-INSERT INTO `jewelry` (`id`, `Jewelry_category_name`, `Jewelry_category_quantity`, `Jewelry_category_status`) VALUES
+INSERT INTO `Општа благосостојба` (`id`, `Jewelry_category_name`, `Jewelry_category_quantity`, `Jewelry_category_status`) VALUES
 (1, 'Earrings', 46, 0x31),
 (2, 'Couple Rings', 73, 0x31),
 (3, 'Necklace', 61, 0x31);
@@ -312,10 +338,10 @@ INSERT INTO `jewelry` (`id`, `Jewelry_category_name`, `Jewelry_category_quantity
 -- --------------------------------------------------------
 
 --
--- Table structure for table `perfume`
+-- Table structure for table `Тегоби`
 --
 
-CREATE TABLE `perfume` (
+CREATE TABLE `Тегоби` (
   `id` int(10) NOT NULL,
   `perfume_category_name` varchar(50) NOT NULL,
   `perfume_category_quantity` int(10) DEFAULT 0,
@@ -323,10 +349,10 @@ CREATE TABLE `perfume` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `perfume`
+-- Dumping data for table `Тегоби`
 --
 
-INSERT INTO `perfume` (`id`, `perfume_category_name`, `perfume_category_quantity`, `perfume_category_status`) VALUES
+INSERT INTO `Тегоби` (`id`, `perfume_category_name`, `perfume_category_quantity`, `perfume_category_status`) VALUES
 (1, 'Clothes Perfume', 12, 0x31),
 (2, 'Deodorant', 60, 0x31),
 (3, 'jacket', 50, 0x31),
@@ -459,11 +485,15 @@ INSERT INTO `settings` (`website_name`, `website_logo`, `website_footer`) VALUES
 --
 
 --
--- Indexes for table `bags`
+-- Indexes for table `Коса, кожа и нокти`
 --
-ALTER TABLE `bags`
+ALTER TABLE `Коса, кожа и нокти`
   ADD PRIMARY KEY (`id`);
 
+-- Indexes for table `Дигестивен тракт`
+--
+ALTER TABLE `Дигестивен тракт`
+    ADD PRIMARY KEY (`id`);
 --
 -- Indexes for table `banner`
 --
@@ -483,21 +513,21 @@ ALTER TABLE `category_bar`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `category_electronics`
+-- Indexes for table `Срце и крвни садови`
 --
-ALTER TABLE `category_electronics`
+ALTER TABLE `Срце и крвни садови`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `clothes`
+-- Indexes for table `Витамини и минерали`
 --
-ALTER TABLE `clothes`
+ALTER TABLE `Витамини и минерали`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `cosmetics`
+-- Indexes for table `Уво, носи грло`
 --
-ALTER TABLE `cosmetics`
+ALTER TABLE `Уво, нос и грло`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -514,27 +544,27 @@ ALTER TABLE `deal_of_the_day`
   ADD PRIMARY KEY (`deal_id`);
 
 --
--- Indexes for table `footwear`
+-- Indexes for table `Козметика и убавина`
 --
-ALTER TABLE `footwear`
+ALTER TABLE `Козметика и убавина`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `glasses`
+-- Indexes for table `Очи, уста и заби`
 --
-ALTER TABLE `glasses`
+ALTER TABLE `Очи, уста и заби`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jewelry`
+-- Indexes for table `Општа благосостојба`
 --
-ALTER TABLE `jewelry`
+ALTER TABLE `Општа благосостојба`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `perfume`
+-- Indexes for table `Тегоби`
 --
-ALTER TABLE `perfume`
+ALTER TABLE `Тегоби`
   ADD PRIMARY KEY (`id`);
 
 --
