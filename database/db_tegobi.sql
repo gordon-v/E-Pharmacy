@@ -27,20 +27,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Тегоби` (
   `id` int(10) NOT NULL,
-  `perfume_category_name` varchar(50) NOT NULL,
-  `perfume_category_quantity` int(10) DEFAULT 0,
-  `perfume_category_status` binary(1) DEFAULT NULL
+  `sub_category_name` varchar(50) NOT NULL,
+  `sub_category_quantity` int(10) DEFAULT 0,
+  `sub_category_status` binary(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `Тегоби`
 --
 
-INSERT INTO `Тегоби` (`id`, `perfume_category_name`, `perfume_category_quantity`, `perfume_category_status`) VALUES
-     (1, 'Clothes Perfume', 12, 0x31),
-     (2, 'Deodorant', 60, 0x31),
-     (3, 'jacket', 50, 0x31),
-     (4, 'dress & frock', 87, 0x31);
+INSERT INTO `Тегоби` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`) VALUES
+     (1, 'Алергија', 12, 0x31),
+     (2, 'Дијабетес', 60, 0x31),
+     (3, 'Болки', 50, 0x31);
 
 -- --------------------------------------------------------
 --

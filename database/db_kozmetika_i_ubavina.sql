@@ -28,21 +28,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Козметика и убавина` (
    `id` int(10) NOT NULL,
-   `footwear_category_name` varchar(50) NOT NULL,
-   `footwear_category_quantity` int(10) DEFAULT 0,
-   `footwear_category_status` binary(1) DEFAULT NULL
+   `sub_category_name` varchar(50) NOT NULL,
+   `sub_category_quantity` int(10) DEFAULT 0,
+   `sub_category_status` binary(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `Козметика и убавина`
 --
 
-INSERT INTO `Козметика и убавина` (`id`, `footwear_category_name`, `footwear_category_quantity`, `footwear_category_status`) VALUES
-    (1, 'Sports', 45, 0x31),
-    (2, 'Formal', 75, 0x31),
-    (3, 'Casual', 35, 0x31),
-    (4, 'jacket', 50, 0x31),
-    (5, 'Safety Shoes', 26, 0x31);
+INSERT INTO `Козметика и убавина` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`) VALUES
+    (1, 'Козметика и убавина', 45, 0x31);
 
 -- --------------------------------------------------------
 --

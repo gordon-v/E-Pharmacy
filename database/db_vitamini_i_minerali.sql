@@ -27,20 +27,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Витамини и минерали` (
   `id` int(10) NOT NULL,
-  `cloth_category_name` varchar(50) NOT NULL,
-  `cloth_category_quantity` int(10) DEFAULT 0,
-  `coloth_category_status` binary(1) DEFAULT NULL
+  sub_category_name varchar(50) NOT NULL,
+  sub_category_quantity int(10) DEFAULT 0,
+  sub_category_status binary(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `VitaminiMinerali`
 --
 
-INSERT INTO `Витамини и минерали` (`id`, `cloth_category_name`, `cloth_category_quantity`, `coloth_category_status`) VALUES
-(1, 'Shirt', 300, 0x31),
-(2, 'shorts & jeans', 60, 0x31),
-(4, 'jacket', 50, 0x31),
-(5, 'dress & frock', 87, 0x31);
+INSERT INTO `Витамини и минерали` (`id`, sub_category_name, sub_category_quantity, sub_category_status)VALUES
+(1, 'Мултивитамини', 300, 0x31),
+(2, 'Витамин Б', 60, 0x31),
+(4, 'Витамин Ц', 50, 0x31),
+(5, 'Витамин Д', 87, 0x31),
+(6, 'Витамин Е', 87, 0x31),
+(7, 'Магнезиум', 87, 0x31),
+(8, 'Цинк', 87, 0x31),
+(9, 'Калциум', 87, 0x31),
+(10, 'Селен', 87, 0x31);
 
 -- --------------------------------------------------------
 --

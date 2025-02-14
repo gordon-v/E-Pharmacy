@@ -27,19 +27,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Очи, уста и заби` (
     `id` int(10) NOT NULL,
-    `glasses_category_name` varchar(50) NOT NULL,
-    `glasses_category_quantity` int(10) DEFAULT 0,
-    `glasses_category_status` binary(1) DEFAULT NULL
+    `sub_category_name` varchar(50) NOT NULL,
+    `sub_category_quantity` int(10) DEFAULT 0,
+    `sub_category_status` binary(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `Очи, уста и заби`
 --
 
-INSERT INTO `Очи, уста и заби` (`id`, `glasses_category_name`, `glasses_category_quantity`, `glasses_category_status`) VALUES
-    (1, 'Sunglasses', 50, 0x31),
-    (2, 'Lenses', 48, 0x31),
-    (3, 'Lenses', 48, 0x31);
+INSERT INTO `Очи, уста и заби` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`) VALUES
+    (1, 'Очи', 50, 0x31),
+    (2, 'Усна хигиена', 48, 0x31),
+    (3, 'Хигиена', 48, 0x31);
 
 -- --------------------------------------------------------
 --

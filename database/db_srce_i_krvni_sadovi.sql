@@ -12,9 +12,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
@@ -25,22 +25,27 @@ SET time_zone = "+00:00";
 -- Table structure for table `Срце и крвни садови`
 --
 
-CREATE TABLE `Срце и крвни садови` (
-                                       `id` int(10) NOT NULL,
-                                       `category_name` varchar(30) NOT NULL,
-                                       `status` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
+CREATE TABLE `Срце и крвни садови`
+(
+    `id`                    int(10)     NOT NULL,
+    `sub_category_name`     varchar(50) NOT NULL,
+    `sub_category_quantity` int(10)   DEFAULT 0,
+    `sub_category_status`   binary(1) DEFAULT NULL
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_general_ci;
+
 -- Dumping data for table `Срце и крвни садови`
 --
+INSERT INTO `Срце и крвни садови` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`)
+VALUES (1, 'Срце', 62, 0x31),
+       (2, 'Притисок', 35, 0x31),
+       (3, 'Холестерол', 35, 0x31),
+       (4, 'Циркулација', 35, 0x31),
+       (5, 'Проширени вени', 35, 0x31),
+       (6, 'Хемороиди', 35, 0x31);
 
-INSERT INTO `Срце и крвни садови` (`id`, `category_name`, `status`) VALUES
-    (1, 'Desktop', 1),
-    (2, 'Laptop', 1),
-    (3, 'Camera', 1),
-    (4, 'Tablet', 1),
-    (5, 'Headphone', 1);
 
 -- --------------------------------------------------------
 --

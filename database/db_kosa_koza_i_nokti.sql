@@ -27,20 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Коса, кожа и нокти` (
-                                      `id` int(10) NOT NULL,
-                                      `bags_category_name` varchar(50) NOT NULL,
-                                      `bags_category_quantity` int(10) DEFAULT 0,
-                                      `bags_category_status` binary(1) DEFAULT NULL
+  `id` int(10) NOT NULL,
+  `sub_category_name` varchar(50) NOT NULL,
+  `sub_category_quantity` int(10) DEFAULT 0,
+  `sub_category_status` binary(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `Коса, кожа и нокти`
 --
 
-INSERT INTO `Коса, кожа и нокти` (`id`, `bags_category_name`, `bags_category_quantity`, `bags_category_status`) VALUES
-                                                                                                                    (1, 'Shopping Bag', 62, 0x31),
-                                                                                                                    (2, 'Purse', 35, 0x31),
-                                                                                                                    (3, 'Wallet', 75, 0x31);
+INSERT INTO `Коса, кожа и нокти` (`id`, `sub_category_name`, `sub_category_quantity`, `sub_category_status`) VALUES
+    (1, 'Опекотини', 62, 0x31),
+    (2, 'Габични инфекции', 35, 0x31);
 
 -- --------------------------------------------------------
 --
