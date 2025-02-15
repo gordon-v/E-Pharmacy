@@ -23,7 +23,7 @@
   include "includes/config.php";
 
   // todo: work with those categories catagory
-$catagory_list = ['men', 'women', 'kids', 'electronics', 'home', 'sports', 'beauty', 'furniture', 'books', 'stationary', 'grocery', 'other'];
+$catagory_list = ['Витамини и минерали', 'Козметика и убавина', 'Општа состојба на организмот', 'Тегоби', 'Уво, нос и грло', 'Очи, уста и заби', 'Коса, кожа и нокти', 'Срце и крвни садови', 'Дигестивен тракт', 'Кожни проблеми', 'Апарати и додатоци', 'Машко здравје', 'Женско здравје', 'Детско здравје'];
 
 for($i=0; $i<sizeof($catagory_list); $i++){
     $sn = $i+1;
