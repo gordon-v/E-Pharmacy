@@ -13,6 +13,11 @@ $oci_usta_i_zabi = get_oci_usta_i_zabi_category();
 $kosa_koza_i_nokti = get_kosa_koza_i_nokti_category();
 $digestiven_trakt = get_digestiven_trakt_category();
 $srce_i_krvni_sadovi = get_srce_i_krvni_sadovi_category();
+$aparati_i_dodatoci = get_aparati_i_dodatoci();
+$kozni_problemi = get_kozni_problemi();
+$mashko_zdravje = get_mashko_zdravje();
+$zensko_zdravje = get_zensko_zdravje();
+$detsko_zdravje = get_detsko_zdravje();
 ?>
 
 
@@ -240,7 +245,86 @@ $srce_i_krvni_sadovi = get_srce_i_krvni_sadovi_category();
                             }
                         }
                         ?>
+                        <?php
+                        if ($row['name'] == "Апарати и додатоци" || $row['name'] == "апарати и додатоци") {
+                            while ($subrow = mysqli_fetch_assoc($aparati_i_dodatoci)) {
+                                ?>
+                                <li class="sidebar-submenu-category">
+                                    <a href="category.php?category=<?php echo urlencode($subrow['sub_category_name']); ?>" class="sidebar-submenu-title">
+                                        <p class="product-name">
+                                            <?php echo $subrow['sub_category_name']; ?>
+                                        </p>
+                                    </a>
+                                </li>
 
+                                <?php
+                            }
+                        }
+                        ?>
+                        <?php
+                        if ($row['name'] == "Кожни проблеми" || $row['name'] == "кожни проблеми") {
+                            while ($subrow = mysqli_fetch_assoc($kozni_problemi)) {
+                                ?>
+                                <li class="sidebar-submenu-category">
+                                    <a href="category.php?category=<?php echo urlencode($subrow['sub_category_name']); ?>" class="sidebar-submenu-title">
+                                        <p class="product-name">
+                                            <?php echo $subrow['sub_category_name']; ?>
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <?php
+                            }
+                        }
+                        ?>
+                        <?php
+                        if ($row['name'] == "Машко здравје" || $row['name'] == "машко здравје") {
+                            while ($subrow = mysqli_fetch_assoc($mashko_zdravje)) {
+                                ?>
+                                <li class="sidebar-submenu-category">
+                                    <a href="category.php?category=<?php echo urlencode($subrow['sub_category_name']); ?>" class="sidebar-submenu-title">
+                                        <p class="product-name">
+                                            <?php echo $subrow['sub_category_name']; ?>
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <?php
+                            }
+                        }
+                        ?>
+                        <?php
+                        if ($row['name'] == "Женско здравје" || $row['name'] == "женско здравје") {
+                            while ($subrow = mysqli_fetch_assoc($zensko_zdravje)) {
+                                ?>
+                                <li class="sidebar-submenu-category">
+                                    <a href="category.php?category=<?php echo urlencode($subrow['sub_category_name']); ?>" class="sidebar-submenu-title">
+                                        <p class="product-name">
+                                            <?php echo $subrow['sub_category_name']; ?>
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <?php
+                            }
+                        }
+                        ?>
+                        <?php
+                        if ($row['name'] == "Детско здравје" || $row['name'] == "детско здравје") {
+                            while ($subrow = mysqli_fetch_assoc($detsko_zdravje)) {
+                                ?>
+                                <li class="sidebar-submenu-category">
+                                    <a href="category.php?category=<?php echo urlencode($subrow['sub_category_name']); ?>" class="sidebar-submenu-title">
+                                        <p class="product-name">
+                                            <?php echo $subrow['sub_category_name']; ?>
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
                 </li>
 

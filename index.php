@@ -7,15 +7,21 @@
   $catgeory_bar_products = get_category_bar_products();
 
   // Get categories
-  $categories = get_categories();
-  $clothes = get_clothes_category();
-  $footwears = get_footwear_category();
-  $jewelries = get_jewelry_category();
-  $perfumes = get_perfume_category();
-  $cosmetics = get_cosmetics_category();
-  $glasses = get_glasses_category();
-  $bags = get_bags_category();
-
+$categories = get_categories();
+$vitamini_i_minerali = get_vitamini_i_minerali_category();
+$kozmetika_i_ubavina = get_kozmetika_i_ubavina_category();
+$opshta_blagosostojba = get_opshta_blagosostojba_category();
+$tegobi = get_tegobi_category();
+$uvo_nos_i_grlo = get_uvo_nos_i_grlo_category();
+$oci_usta_i_zabi = get_oci_usta_i_zabi_category();
+$kosa_koza_i_nokti = get_kosa_koza_i_nokti_category();
+$digestiven_trakt = get_digestiven_trakt_category();
+$srce_i_krvni_sadovi = get_srce_i_krvni_sadovi_category();
+$aparati_i_dodatoci = get_aparati_i_dodatoci();
+$kozni_problemi = get_kozni_problemi();
+$mashko_zdravje = get_mashko_zdravje();
+$zensko_zdravje = get_zensko_zdravje();
+$detsko_zdravje = get_detsko_zdravje();
 
   // Get all new arrivals
 $new_arrivals1 = get_new_arrivals();

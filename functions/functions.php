@@ -109,7 +109,41 @@ function get_srce_i_krvni_sadovi_category()
 
     return $result = mysqli_query($conn, $query);
 }
+function get_aparati_i_dodatoci()
+{
+    global $conn;
+    $query = "SELECT * FROM `Апарати и додатоци` WHERE `Апарати и додатоци`.sub_category_status = 1";
 
+    return $result = mysqli_query($conn,$query);
+}
+function get_kozni_problemi()
+{
+    global $conn;
+    $query = "SELECT * FROM `Кожни проблеми` WHERE `Кожни проблеми`.sub_category_status = 1";
+
+    return $result = mysqli_query($conn,$query);
+}
+function get_mashko_zdravje()
+{
+    global $conn;
+    $query = "SELECT * FROM `Машко здравје` WHERE `Машко здравје`.sub_category_status = 1";
+
+    return $result = mysqli_query($conn,$query);
+}
+function get_zensko_zdravje()
+{
+    global $conn;
+    $query = "SELECT * FROM `Женско здравје` WHERE `Женско здравје`.sub_category_status = 1";
+
+    return $result = mysqli_query($conn,$query);
+}
+function get_detsko_zdravje()
+{
+    global $conn;
+    $query = "SELECT * FROM `Детско здравје` WHERE `Детско здравје`.sub_category_status = 1";
+
+    return $result = mysqli_query($conn,$query);
+}
 // get best sellers form product table
 function get_best_sellers()
 {
