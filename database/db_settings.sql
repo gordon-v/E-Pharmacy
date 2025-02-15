@@ -12,9 +12,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT = @@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS = @@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION = @@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
@@ -25,15 +25,18 @@ SET time_zone = "+00:00";
 -- Table structure for table `settings`
 --
 
-CREATE TABLE `settings` (
-                            `website_name` varchar(60) NOT NULL,
-                            `website_logo` varchar(50) NOT NULL,
-                            `website_footer` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `settings`
+(
+    `website_name`   varchar(60)  NOT NULL,
+    `website_logo`   varchar(50)  NOT NULL,
+    `website_footer` varchar(255) NOT NULL
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_general_ci;
 
 --
 -- Dumping data for table `settings`
 --
 
-INSERT INTO `settings` (`website_name`, `website_logo`, `website_footer`) VALUES
-    ('HCA E-Commerce', 'HCA-E-COMMERCE.png', 'HCA E-Commerce');
+INSERT INTO `settings` (`website_name`, `website_logo`, `website_footer`)
+VALUES ('Про Виталис', 'HCA-E-COMMERCE.png', 'HCA E-Commerce');

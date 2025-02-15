@@ -93,51 +93,45 @@ $top_rated_products2 = get_top_rated_products();
       - BANNER: Coursal
     -->
 
-  <div class="banner">
-    <div class="container">
-      <div class="slider-container has-scrollbar">
-        <!-- Display data from db in banner -->
-        <?php
-        while ($row = mysqli_fetch_assoc($banner_products)) {
-        ?>
-
-          <div class="slider-item">
-            <img src="images/carousel/<?php
-                                      echo $row['banner_image'];
-                                      ?>" alt="women's latest fashion sale" class="banner-img" />
-
-            <div class="banner-content">
-              <p class="banner-subtitle">
+    <div class="banner">
+        <div class="container">
+            <div class="slider-container has-scrollbar">
+                <!-- Display data from db in banner -->
                 <?php
-                echo $row['banner_subtitle'];
+                while ($row = mysqli_fetch_assoc($banner_products)) {
+                    // Get the banner item price
+                    $banner_items_price = $row['banner_items_price'];
+                    ?>
+
+                    <div class="slider-item">
+                        <img src="images/carousel/<?php echo $row['banner_image']; ?>" alt="women's latest fashion sale" class="banner-img" />
+
+                        <div class="banner-content">
+                            <p class="banner-subtitle">
+                                <?php echo $row['banner_subtitle']; ?>
+                            </p>
+
+                            <h2 class="banner-title">
+                                <?php echo $row['banner_title']; ?>
+                            </h2>
+
+                            <?php if ($banner_items_price > 0): ?>
+                                <p class="banner-text">starting at &dollar; <b><?php echo $banner_items_price; ?></b>.00</p>
+                                <a href="#" class="banner-btn">Shop now</a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <?php
+                }
                 ?>
-              </p>
-
-              <h2 class="banner-title">
-                <?php
-                echo $row['banner_title'];
-                ?>
-              </h2>
-
-              <p class="banner-text">starting at &dollar;
-                <b><?php echo $row['banner_items_price']; ?></b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
             </div>
-          </div>
-
-        <?php
-        }
-        ?>
-        <!--  -->
-      </div>
+        </div>
     </div>
-  </div>
 
-  <!--
-      - CATEGORY: Bar 
-    -->
+    <!--
+        - CATEGORY: Bar
+      -->
 
   <div class="category">
     <div class="container">

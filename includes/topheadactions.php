@@ -68,7 +68,7 @@
 
             <h1 style="text-align: center;">
 
-            <img src="admin/upload/<?php echo $_SESSION['web-img']; ?>" alt="logo" width="200px">
+            <img src="admin/upload/pro_vitalis_logo.png" alt="logo" width="100px">
 
             </h1>
 
