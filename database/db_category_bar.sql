@@ -38,13 +38,13 @@ CREATE TABLE `category_bar` (
 --
 
 INSERT INTO `category_bar` (`id`, `category_title`, `category_quantity`, `category_img`, `category_status`) VALUES
-(1, 'Dress & frock', 53, 'coat.svg', 0x31),
-(2, 'Glasses & lens', 68, 'glasses.svg', 0x31),
-(3, 'Shorts & jeans', 84, 'shorts.svg', 0x31),
-(4, 'T-shirts', 35, 'tee.svg', 0x31),
-(5, 'Jacket', 16, 'jacket.svg', 0x31),
-(6, 'Watch', 27, 'watch.svg', 0x31),
-(7, 'Hat & caps', 39, 'hat.svg', 0x31);
+(1, 'Мултивитамини', 53, 'coat.svg', 0x31),
+(2, 'Имунитет', 68, 'glasses.svg', 0x31),
+(3, 'Кашлица', 84, 'shorts.svg', 0x31),
+(4, 'Хигиена', 35, 'tee.svg', 0x31),
+(5, 'Желудник', 16, 'jacket.svg', 0x31),
+(6, 'Срце', 27, 'watch.svg', 0x31),
+(7, 'Пробиотици', 39, 'hat.svg', 0x31);
 
 -- --------------------------------------------------------
 --

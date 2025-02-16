@@ -471,9 +471,9 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .toast-banner {
   width: 70px;
   height: 70px;
-  border: 1px solid var(--pale-purple-pentone);
-  -webkit-border-radius: var(--border-radius-sm);
-          border-radius: var(--border-radius-sm);
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  border: 2px solid #0002bc; /* Optional: Add a white border for contrast */
 }
 
 .toast-banner img {
@@ -1095,7 +1095,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .sidebar-submenu-category-list.active {
   padding: 13px 0 8px;
-  max-height: 122px;
+  max-height: 200px;
   visibility: visible;
 }
 
@@ -2714,7 +2714,7 @@ footer {
             border-radius: 20px;
   }
 
-  .desktop-navigation-menu { display: block; }
+  .desktop-navigation-menu { display: block; font-family: "Arial", sans-serif; }
 
   .desktop-menu-category-list {
     position: relative;
@@ -2950,7 +2950,7 @@ footer {
     min-width: calc(25% - 15px);
     margin-bottom: 30px;
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: vis;
     -ms-scroll-chaining: chained;
         overscroll-behavior: auto;
     z-index: 0;

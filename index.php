@@ -54,15 +54,15 @@ $top_rated_products2 = get_top_rated_products();
   </button>
 
   <div class="toast-banner">
-    <img src="./admin/upload/watch-2.jpg" alt="Smart Watch" width="80" height="70" />
+    <img src="./admin/upload/pushnotif.png" alt="с" width="80" height="70" />
   </div>
 
   <div class="toast-detail">
-    <p class="toast-message">Someone in new just bought</p>
+    <p class="toast-message">Ви треба помош?</p>
 
-    <p class="toast-title">Smart Watch</p>
+    <p class="toast-title">Испратете ни порака</p>
 
-    <p class="toast-meta"><time datetime="PT2M">2 Minutes</time> ago</p>
+    <p class="toast-meta"><time datetime="PT2M"></time></p>
   </div>
 </div>
 
@@ -133,54 +133,44 @@ $top_rated_products2 = get_top_rated_products();
         - CATEGORY: Bar
       -->
 
-  <div class="category">
-    <div class="container">
-      <div class="category-item-container has-scrollbar">
-        <!--  -->
-        <?php
-        while ($row = mysqli_fetch_assoc($catgeory_bar_products)) {
-        ?>
+    <div class="category">
+        <div class="container">
+            <div class="category-item-container has-scrollbar">
+                <!--  -->
+                <?php
+                while ($row = mysqli_fetch_assoc($catgeory_bar_products)) {
+                    ?>
 
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="./images/icons/<?php echo $row['category_img'] ?>" alt="category bar img" width="30" />
+                        </div>
 
-          <div class="category-item">
-            <div class="category-img-box">
-              <img src="./images/icons/<?php echo $row['category_img'] ?>" alt="category bar img" width="30" />
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title"><?php echo $row['category_title'] ?></h3>
+                                <p class="category-item-amount">(<?php echo $row['category_quantity'] ?>)</p>
+                            </div>
+
+                            <!-- Updated: Using <a> tag to redirect -->
+                            <a href="category.php?category=<?php echo urlencode($row['category_title']); ?>" class="category-link">
+                                <p class="category-btn">Show all</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <?php
+                }
+                ?>
             </div>
-
-            <div class="category-content-box">
-              <div class="category-content-flex">
-                <h3 class="category-item-title"><?php echo $row['category_title'] ?></h3>
-
-                <p class="category-item-amount">(<?php echo $row['category_quantity'] ?>)</p>
-              </div>
-
-            <!-- updated it. set to form and will send data to search page -->
-                  <form class="search-form" method="post" action="./search.php">
-                    <input type="hidden" name="search" value="<?php echo $row['category_title'] ?>" />
-                        <button type="submit" name="submit" class="sidebar-submenu-title">
-
-                          <p class="category-btn">
-                            Show all
-                          </p>
-
-                        </button>
-                  </form>              
-            </div>
-          </div>
-        <?php
-        }
-        ?>
-
-
-        <!--  -->
-
-      </div>
+        </div>
     </div>
-  </div>
 
-  <!--
-      - PRODUCT
-    -->
+
+    <!--
+        - PRODUCT
+      -->
 
   <div class="product-container">
     <div class="container">
@@ -614,9 +604,9 @@ $product_left = array();
             <?php
               $new_product_counter = $new_product_counter + 1;
             }
-    }else { 
+    }else {
       echo "No Results Found"; }
-             $conn->close(); 
+             $conn->close();
 
             ?>
             <!--  -->
@@ -625,8 +615,8 @@ $product_left = array();
         <!-- pagination start -->
         <!--Pagination-->
 <?php
-    include "includes/config.php"; 
-    // Pagination btn using php with active effects 
+    include "includes/config.php";
+    // Pagination btn using php with active effects
 
     $sql1 = "SELECT * FROM products";
     $result1 = mysqli_query($conn, $sql1) or die("Query Failed.");
@@ -640,7 +630,7 @@ $product_left = array();
       <ul class="pagination-ul">
 
 
-        <?php 
+        <?php
             for($i=1; $i<=$total_page; $i++){
                 //important this is for active effects that denote in which page you are in current position
                 if ($page==$i) {

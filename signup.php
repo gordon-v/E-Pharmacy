@@ -12,7 +12,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <title>Signup</title>
+    <title>Креирај профил</title>
     <style>
       * {
         box-sizing: border-box;
@@ -55,23 +55,23 @@
           width="200px"
         />
       </div>
-      <h1 class="signup-title">Sign Up Please</h1>
+      <h1 class="signup-title">Креирај профил</h1>
     <hr>
       <form action="includes/signup.inc.php" method="post"  class="row g-3">
         <div class="col-md-6">
-          <label for="inputAddress2" class="form-label">Full Name</label>
+          <label for="inputAddress2" class="form-label">Име и презиме</label>
           <input
             type="text"
             class="form-control"
             name="name"
             required="required"
-            placeholder="Full Name..."
+            placeholder="Име Презиме"
           />
         </div>
         <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Number</label>
+          <label for="inputAddress" class="form-label">Телефонски број</label>
           <input
-            type="number"
+            type="телефонски број"
             class="form-control"
             name="number"
             required="required"
@@ -79,44 +79,44 @@
           />
         </div>
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
+          <label for="inputEmail4" class="form-label">Е-пошта</label>
           <input 
           type="email" 
           class="form-control"
           name="email"
-          placeholder="Email"
+          placeholder="е-пошта"
           required="required"
            />
         </div>
         <div class="col-md-6">
-          <label for="inputAddress" class="form-label">Address</label>
+          <label for="inputAddress" class="form-label">Адреса</label>
           <input
             type="text"
             class="form-control"
             name="address"
             required="required"
-            placeholder="1234 Main St"
+            placeholder="Адреса 123"
           />
         </div>
 
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
+          <label for="inputPassword4" class="form-label">Лозинка</label>
           <input 
             type="password"
             class="form-control"
             name="pwd"
-            placeholder="password"
+            placeholder="лозинка"
             required="required" />
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label"
-            >Confirm Password</label
+            >Потврди лозинка</label
           >
           <input 
           type="password" 
           class="form-control" 
           name="rpwd"
-          placeholder="Confirm Password"
+          placeholder="потврди лозинка"
           required="required"
           />
         </div>
@@ -126,7 +126,7 @@
           type="submit" 
           class="btn btn-primary"
           name="submit"
-          >Register</button>
+          >Креирај</button>
         </div>
       </form>
     </div>

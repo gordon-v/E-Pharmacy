@@ -28,7 +28,7 @@ $detsko_zdravje = get_detsko_zdravje();
 <div class="sidebar has-scrollbar" data-mobile-menu>
     <div class="sidebar-category">
         <div class="sidebar-top">
-            <h2 class="sidebar-title">Category</h2>
+            <h2 class="sidebar-title">Категории</h2>
 
             <button class="sidebar-close-btn" data-mobile-menu-close-btn>
                 <ion-icon name="close-outline"></ion-icon>
@@ -44,7 +44,7 @@ $detsko_zdravje = get_detsko_zdravje();
                 <li class="sidebar-menu-category">
                     <button class="sidebar-accordion-menu" data-accordion-btn>
                         <div class="menu-title-flex">
-                            <img src="./images/icons/<?php echo $row['img'] ?>" alt="clothes" width="20" height="20"
+                            <img src="./images/side_bar_icons/<?php echo $row['img'] ?>" alt="clothes" width="20" height="20"
                                  class="menu-title-img"/>
 
                             <p class="menu-title"><?php echo $row['name'] ?></p>

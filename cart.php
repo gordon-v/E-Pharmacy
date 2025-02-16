@@ -86,10 +86,10 @@
 
            <table>
   <tr>
-    <th>Image</th>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Quantity</th>
+    <th>Продукт</th>
+    <th>Име</th>
+    <th>Цена</th>
+    <th>Количина</th>
   </tr>
   <?php
 
@@ -117,7 +117,7 @@
   
     ?>
         <tr >
-      <td colspan='4' >No item available in cart</td>
+      <td colspan='4' >Вашата кошничка е празна.</td>
     </tr>
 
     <?php
@@ -145,7 +145,7 @@ if(isset($_SESSION['mycart']))
    ?>
     <div class="child-register-btn">
                                
-                               <p > <a href="checkout.php" style="color:#FFFFFF">Proceed To CheckOut</a>
+                               <p > <a href="checkout.php" style="color:#FFFFFF">Нарачај</a>
                                 </p>
                            </div>
 

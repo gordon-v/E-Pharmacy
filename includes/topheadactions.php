@@ -41,22 +41,16 @@
 
           <div class="header-alert-news">
             <p>
-              <b>Free Shipping</b>
-              This Week Order Over - $55
+              <b>БЕСПЛАТНА ДОСТАВА</b>
+              за нарачки над 1500 денари
             </p>
           </div>
 
           <div class="header-top-actions">
             <select name="currency">
-              <option value="usd">USD &dollar;</option>
-              <option value="eur">EUR &euro;</option>
+              <option value="MKD">mkd</option>
             </select>
 
-            <select name="language">
-              <option value="en-US">English</option>
-              <option value="es-ES">Espa&ntilde;ol</option>
-              <option value="fr">Fran&ccedil;ais</option>
-            </select>
           </div>
         </div>
       </div>
@@ -68,7 +62,7 @@
 
             <h1 style="text-align: center;">
 
-            <img src="admin/upload/pro_vitalis_logo.png" alt="logo" width="100px">
+            <img src="admin/upload/provitalislogo1.png" alt="logo" width="250px">
 
             </h1>
 
@@ -77,7 +71,7 @@
           <!-- search input -->
           <div class="header-search-container">
             <form class="search-form" method="post" action="./search.php">
-              <input type="search" name="search" class="search-field" placeholder="Enter your product name..." required oninvalid="this.setCustomValidity('Enter product name...')" oninput="this.setCustomValidity('')" />
+              <input type="search" name="search" class="search-field" placeholder="Пронајди производ..." required oninvalid="this.setCustomValidity('Enter product name...')" oninput="this.setCustomValidity('')" />
 
               <button class="search-btn" type="submit" name="submit">
                 <ion-icon name="search-outline"></ion-icon>

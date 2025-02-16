@@ -7,28 +7,28 @@
 
       <li class="menu-category">
         <a href="index.php?id=<?php echo (isset( $_SESSION['customer_name']))? $_SESSION['id']: 'unknown';?>" class="menu-title">
-          Home
+          Почетна
         </a>
       </li>
 
       <li class="menu-category">
-        <a href="./category.php?category=<?php echo "men"; ?>" class="menu-title">Men's</a>
+        <a href="./category.php?category=<?php echo "men"; ?>" class="menu-title">Блог</a>
       </li>
 
       <li class="menu-category">
-        <a href="./category.php?category=<?php echo "women"; ?>" class="menu-title">Women's</a>
+        <a href="./category.php?category=<?php echo "women"; ?>" class="menu-title">Нутри-корнер</a>
       </li>
 
       <li class="menu-category">
         <a href="contact.php?id=<?php echo (isset( $_SESSION['customer_name']))? $_SESSION['id']: 'unknown';?>" class="menu-title">
-          Contact
+          Контакт
         </a>
       </li>
 
 
 
       <li class="menu-category">
-        <a href="about.php?id=<?php echo (isset( $_SESSION['customer_name']))? $_SESSION['id']: 'unknown';?>" class="menu-title">About</a>
+        <a href="about.php?id=<?php echo (isset( $_SESSION['customer_name']))? $_SESSION['id']: 'unknown';?>" class="menu-title">За нас</a>
       </li>
 
       <!-- Prfile Link Setup -->
@@ -37,7 +37,7 @@
 
         <li class="menu-category" style="opacity:1">
           <a href="profile.php?id=<?php echo (isset( $_SESSION['customer_name']))? $_SESSION['id']: 'unknown';?>" class="menu-title">
-            Profile
+            Профил
           </a>
         </li>
 
@@ -46,7 +46,7 @@
 
         <li class="menu-category" style="opacity:0.5">
           <a style="cursor: not-allowed;" href="#?loginfirst" class="menu-title">
-            Profile(Signin Plz)
+            Профил(Најавете се)
           </a>
         </li>
 

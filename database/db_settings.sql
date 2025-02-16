@@ -39,4 +39,4 @@ CREATE TABLE `settings`
 --
 
 INSERT INTO `settings` (`website_name`, `website_logo`, `website_footer`)
-VALUES ('Про Виталис', 'HCA-E-COMMERCE.png', 'HCA E-Commerce');
+VALUES ('Pro Vitalis', 'provitalislogo1.png', 'HCA E-Commerce');

@@ -77,7 +77,7 @@ require_once 'functions/functions.php';
             name="email"
             type="email"
             class="form-control"
-            placeholder="Email"
+            placeholder="Е-пошта"
           />
         </div>
       </div>
@@ -91,7 +91,7 @@ require_once 'functions/functions.php';
             name="pwd"
             type="password"
             class="form-control"
-            placeholder="Password"
+            placeholder="Лозинка"
           />
         </div>
       </div>
@@ -101,7 +101,7 @@ require_once 'functions/functions.php';
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck1" />
             <label class="form-check-label" for="gridCheck1">
-              Remeber Me
+              Запомни ме
             </label>
           </div>
         </div>
@@ -111,7 +111,7 @@ require_once 'functions/functions.php';
         type="submit" 
         class="btn btn-primary">
         <a href="./signup.php" id="signup-btn">
-             Sign up
+             Креирај профил
 		</a>
            
         </button>
@@ -120,7 +120,7 @@ require_once 'functions/functions.php';
         type="submit" 
         class="btn btn-primary"
         name="login">
-            Sign in
+            Логирај се
         </button>
       </div>
     </form>

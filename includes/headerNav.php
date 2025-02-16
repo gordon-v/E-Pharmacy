@@ -67,7 +67,7 @@
 <?php
   //  site details
     // $site_name = "HCA E-Commerce";
-    $site_address = "5900 BALCONES DRIVE STE 4129 AUSTIN TX, USA 78731";
-    $site_contact_num = "(336) 717-5310";
-    $site_info_email = "info@clickableshop.com";
+    $site_address = "11-ти Октомври 45, Куманово 1300, Македонија";
+    $site_contact_num = "031 415 303";
+    $site_info_email = "atanasovicsuzana@yahoo.com";
 ?>
