@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/database/db_settings.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/database/db_vitamini_i_minerali.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/database_backup/db_ecommerce.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/database_backup/db_vitamini_i_minerali.sql" dialect="MySQL" />
   </component>
 </project>

@@ -32,7 +32,7 @@ function get_categories()
 }
 
 // get clothes category
-function get_vitamini_i_minerali_category()
+function get_suplementi_za_dobro_zdravje_category()
 {
     global $conn;
     $query = "SELECT * FROM `Витамини и минерали` WHERE `Витамини и минерали`.sub_category_status = 1";
