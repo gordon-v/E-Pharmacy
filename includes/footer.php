@@ -5,7 +5,7 @@
 
     <footer style="margin-top:70px">
       <div class="footer-category">
-        <div class="container">
+        <!--<div class="container">
           <h2 class="footer-category-title">Brand directory</h2>
 
           <div class="footer-category-box">
@@ -72,117 +72,110 @@
             <a href="#" class="footer-category-link">lipstick</a>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <div class="footer-nav">
         <div class="container">
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
-              <h2 class="nav-title">Popular Categories</h2>
+              <h2 class="nav-title">Популарни категории</h2>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Fashion</a>
+              <a href="#" class="footer-nav-link">Хигиена</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Electronic</a>
+              <a href="#" class="footer-nav-link">Срце и крвни садови</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Cosmetic</a>
+              <a href="#" class="footer-nav-link">Козметика</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Health</a>
+              <a href="#" class="footer-nav-link">Општа благосостојба</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Watches</a>
-            </li>
-          </ul>
-
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Products</h2>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Prices drop</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">New products</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Best sales</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="./contact.php" class="footer-nav-link">Contact us</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Sitemap</a>
+              <a href="#" class="footer-nav-link">Стрес и несоница</a>
             </li>
           </ul>
 
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
-              <h2 class="nav-title">Our Company</h2>
+              <h2 class="nav-title">Продукти</h2>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Delivery</a>
+              <a href="#" class="footer-nav-link">Намалени цени</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Legal Notice</a>
+              <a href="#" class="footer-nav-link">Нови продукти</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Terms and conditions</a>
+              <a href="#" class="footer-nav-link">Најпопуларни продукти</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="./about.php" class="footer-nav-link">About us</a>
+              <a href="./contact.php" class="footer-nav-link">Контактирајте не</a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Secure payment</a>
-            </li>
-          </ul>
-
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Services</h2>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Prices drop</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">New products</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Best sales</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="./contact.php" class="footer-nav-link">Contact us</a>
-            </li>
-
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Sitemap</a>
+              <a href="#" class="footer-nav-link">Мапа</a>
             </li>
           </ul>
 
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
-              <h2 class="nav-title">Contact</h2>
+              <h2 class="nav-title">Нашата аптека</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Достава</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Услови на користење</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="./about.php" class="footer-nav-link">За нас</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Сервиси</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Бесплатна достава</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Лекови на рецепт</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Онјајн-подршка</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="./contact.php" class="footer-nav-link">Контактирајте не</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Почетна</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Контакт</h2>
             </li>
 
             <li class="footer-nav-item flex">
@@ -250,10 +243,10 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <img src="./images/payment.png" alt="payment method" class="payment-img" />
+<!--          <img src="./images/payment.png" alt="payment method" class="payment-img" />-->
 
           <p class="copyright">
-            Copyright &copy; <a href="#"><?php echo $_SESSION['web-footer']; ?></a> all rights reserved.
+            Copyright &copy; Про Виталис - сите права задржани.
           </p>
         </div>
       </div>

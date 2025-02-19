@@ -44,7 +44,7 @@ CREATE TABLE `banner`
 
 INSERT INTO `banner` (`banner_id`, `banner_subtitle`, `banner_title`, `banner_items_price`, `banner_image`,
                       `banner_status`)
-VALUES (1, '', '', 0, 'bannerprovit.jpg', 0x31),
+VALUES (1, '', '', 0, 'banner-test.png', 0x31),
        (2, 'Trending itemtest', 'Women\'s latest fashion sale', 20, 'banner-1.jpg', 0x31),
        (3, 'Trending accessories', 'Modern sunglasses', 15, 'banner-2.jpg', 0x31),
        (4, 'Sale Offer', 'New fashion summer sale', 29, 'banner-3.jpg', 0x31);

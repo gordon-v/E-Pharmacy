@@ -16,7 +16,7 @@ $deals_of_the_day = get_deal_of_day();
               <div class="showcase-container">
                 <div class="showcase">
                   <div class="showcase-banner">
-                    <img src="./admin/upload/<?php echo $row['deal_image']; ?>" alt="shampoo, conditioner & facewash packs" class="showcase-img" />
+                    <img src="./images/deal_of_the_day_images/<?php echo $row['deal_image']; ?>" alt="shampoo, conditioner & facewash packs" class="showcase-img" />
                   </div>
 
                   <div class="showcase-content">
@@ -44,7 +44,7 @@ $deals_of_the_day = get_deal_of_day();
                       <del>$<?php echo $row['deal_discounted_price'] ?></del>
                     </div>
 
-                     <button class="add-cart-btn">Premium</button>
+                     <button class="add-cart-btn">Купи сега</button>
 
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -57,23 +57,23 @@ $deals_of_the_day = get_deal_of_day();
                     </div>
 
                     <div class="countdown-box">
-                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+                      <p class="countdown-desc">Побрзо! Понудата завршува за:</p>
 
                       <div class="countdown">
                         <div class="countdown-content">
-                          <p class="display-number">360</p>
+                          <p class="display-number">20</p>
 
-                          <p class="display-text">Days</p>
+                          <p class="display-text">дена</p>
                         </div>
 
                         <div class="countdown-content">
-                          <p class="display-number">24</p>
-                          <p class="display-text">Hours</p>
+                          <p class="display-number">5</p>
+                          <p class="display-text">саати</p>
                         </div>
 
                         <div class="countdown-content">
-                          <p class="display-number">59</p>
-                          <p class="display-text">Min</p>
+                          <p class="display-number">39</p>
+                          <p class="display-text">минути</p>
                         </div>
 
                         <div class="countdown-content">
